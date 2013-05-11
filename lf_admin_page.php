@@ -38,7 +38,7 @@ else{}
 $arr = $language_fields;
 $num=1;
 $num1=0;
-if(get_option("language_fields")!==false){
+if(get_option("language_fields")!=""){
 foreach ($arr as $key => $value) {
 
 

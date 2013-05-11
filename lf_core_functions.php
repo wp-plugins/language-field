@@ -178,7 +178,7 @@ function lf_rewrite_rules_array($rewrite_rules) {
 
 	global $wp_rewrite;
 
-if(get_option("language_fields")!==false){
+if(get_option("language_fields")!=""){
 	
 	$arr=get_option("language_fields");
 	foreach ($arr as $key => $value) {

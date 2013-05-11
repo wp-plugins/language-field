@@ -28,7 +28,7 @@ else{}
 		<?php
 		
 		_e('<br>Welcome to the Language Field Plugin.<bR>Start adding your Languages<bR>');
-		_e('the format is: <br><b>first:</b> Language locale like de-DE <b>second:</b>shortform like de <b>third:</b> long name');		
+		_e('the format is: <br><b>first:</b> Language locale like de-DE <b>second:</b> shortform like de <b>third:</b> long name');		
 		$language_fields=get_option("language_fields");
 	
 		//print_r($language_fields);
@@ -38,7 +38,7 @@ else{}
 $arr = $language_fields;
 $num=1;
 $num1=0;
-if(get_option("language_fields")!=""){
+//if(get_option("language_fields")==true){
 foreach ($arr as $key => $value) {
 
 
@@ -63,7 +63,7 @@ echo '<p><label for="var'.$num.'">Language: </label><input type="text" name="'.$
 $num1=$num;
     //echo "Key: $key; Value: $value<br />\n";
 }
-}
+//}
 ?>
 
 		

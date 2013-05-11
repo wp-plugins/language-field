@@ -178,14 +178,16 @@ function lf_rewrite_rules_array($rewrite_rules) {
 
 	global $wp_rewrite;
 
-if(get_option("language_fields")!=""){
+
 	
 	$arr=get_option("language_fields");
+	$custom = array();
 	foreach ($arr as $key => $value) {
       if(strstr($key,"language_shortcode")){
 			$custom[$value.'/?$'] = 'index.php?post_type=post';
-			}} 
 			}
+			} 
+			
 
 	return $custom + $rewrite_rules;
 
@@ -200,6 +202,8 @@ function lf_query_vars($query) {
 	return $query;
 
 }
+
+
 
 add_action('init', 'lf_init');
 ?>

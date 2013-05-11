@@ -1,4 +1,4 @@
-=== Language Field Plugin ===
+=== Language Field ===
 Contributors: theode
 Donate link: http://www.wp-plugin-dev.com/donate
 Tags: multilingual,language,languages,translation

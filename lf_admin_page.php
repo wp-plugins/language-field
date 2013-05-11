@@ -38,6 +38,7 @@ else{}
 $arr = $language_fields;
 $num=1;
 $num1=0;
+if(get_option("language_fields")!==false){
 foreach ($arr as $key => $value) {
 
 
@@ -61,6 +62,7 @@ echo '<p><label for="var'.$num.'">Language: </label><input type="text" name="'.$
 }
 $num1=$num;
     //echo "Key: $key; Value: $value<br />\n";
+}
 }
 ?>
 

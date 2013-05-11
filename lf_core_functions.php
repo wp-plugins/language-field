@@ -178,18 +178,14 @@ function lf_rewrite_rules_array($rewrite_rules) {
 
 	global $wp_rewrite;
 
-
-	//change this to lf custom language code of lf secondary language
-	$custom['en/?$'] = 'index.php?post_type=post';
-	$custom['de/?$'] = 'index.php?post_type=post';
-	$custom['pl/?$'] = 'index.php?post_type=post';
-	$custom['es/?$'] = 'index.php?post_type=post';
+if(get_option("language_fields")!=""){
 	
 	$arr=get_option("language_fields");
 	foreach ($arr as $key => $value) {
       if(strstr($key,"language_shortcode")){
 			$custom[$value.'/?$'] = 'index.php?post_type=post';
-			}}
+			}} 
+			}
 
 	return $custom + $rewrite_rules;
 

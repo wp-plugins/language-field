@@ -4,7 +4,7 @@ Donate link: http://www.wp-plugin-dev.com/donate
 Tags: multilingual,language,languages,translation
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 0.7
+Stable tag: 0.71
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

@@ -25,7 +25,7 @@ You maybe think that would be quite simple using WPML. But what are you doing if
 For this special case, we wrote a plugin, which is able to show all languages on the home page and manipulates the query if some language is chosen.
 It also makes a difference in terms of SEO as it changes the line
 
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-EN">
+&lt;html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-EN"&gt;
 
 according to your language.
 

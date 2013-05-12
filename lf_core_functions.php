@@ -68,7 +68,7 @@ function alter_the_query( $request ) {
 
     // this is the actual manipulation; do whatever you need here
     
-    $rewrite_hack=str_replace(get_bloginfo('url'),"", get_current_url());
+    $rewrite_hack=str_replace(get_bloginfo('url'),"", get_current_url_lf());
             // echo "<blink><h1>".$rewrite_hack."</h1></blink>";
 		//echo "<blink><h1>works</h1></blink>";
    
@@ -138,7 +138,7 @@ add_filter( 'request', 'alter_the_query' );
 
 
 
-function get_current_url(){
+function get_current_url_lf(){
 $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
 if ($_SERVER["SERVER_PORT"] != "80")
 {

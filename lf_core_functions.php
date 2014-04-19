@@ -45,7 +45,7 @@ function get_language_code_of_this()
 {
 
 global $wp_query;
-$thePostID = $wp_query->post->ID;
+$thePostID = (int)$wp_query->post->ID;
  $lf_language_code = get_post_meta( $thePostID, '_lf_language_code', true);
  if ($lf_language_code!='' && is_single() || is_home()) {
  return "dir=\"ltr\" lang=\"".$lf_language_code."\"";
@@ -59,7 +59,7 @@ $thePostID = $wp_query->post->ID;
 }
 
 
-add_filter('language_attributes', get_language_code_of_this);
+add_filter('language_attributes', 'get_language_code_of_this');
 
 
 function alter_the_query( $request ) {

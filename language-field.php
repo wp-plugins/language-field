@@ -4,7 +4,7 @@ Plugin Name: Language Field
 Plugin URI: http://wordpress.org/extend/plugins/language-field
 Description: This is a Plug-in to manually change languages for specific Articles, to solve issues on multilingual blogs
 Author: wp-plugin-dev.com
-Version: 0.72
+Version: 0.73
 Author URI: http://www.wp-plugin-dev.com
 Text Domain:   language-field
 Domain Path:   /lang/

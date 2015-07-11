@@ -156,7 +156,7 @@ return $pageURL;
 
 
 
-add_action('init', 'lf_init');
+//add_action('init', 'lf_init');
 
 add_filter('rewrite_rules_array', 'lf_rewrite_rules_array');
 

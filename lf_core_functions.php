@@ -205,5 +205,5 @@ function lf_query_vars($query) {
 
 
 
-add_action('init', 'lf_init');
+//add_action('init', 'lf_init');
 ?>
